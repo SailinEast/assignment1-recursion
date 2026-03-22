@@ -152,9 +152,9 @@ public class Main {
     }
 
     // Task 9
-    public static int countCharacters(String s) {
-        // TODO: Implement recursive logic to count characters
-        return 0;
+    public static int countCharacters(String s, int i) {
+        if (s.length() == i) return 0;
+        return 1 + countCharacters(s, i + 1);
     }
 
     // Task 10
