@@ -120,8 +120,8 @@ public class Main {
 
     // Task 4
     public static int factorial(int n) {
-        // TODO: Implement recursive logic to calculate factorial
-        return 0;
+        if (n <= 1) return 1;
+        return n * factorial(n - 1);
     }
 
     // Task 5
