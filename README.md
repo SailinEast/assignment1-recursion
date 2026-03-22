@@ -1,8 +1,8 @@
 # ADS: Assignment 1
 
 ## Information
-**Student:** [Your Name Here]  
-**Group:** [Your Group Here]  
+**Student:** Anas Boranbayev  
+**Group:** SE-2511
 
 ## Summary of Work Process
 * **Architecture:** I separated my code into three distinct classes to follow professional design principles: `Main.java` acts as the Controller/Menu, `IOHandler.java` handles the user prompts and Scanner inputs to keep the logic clean, and `Solution.java` contains the pure recursive mathematical logic.
