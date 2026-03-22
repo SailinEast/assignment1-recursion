@@ -126,8 +126,8 @@ public class Main {
 
     // Task 5
     public static int fibonacci(int n) {
-        // TODO: Implement recursive logic to find nth Fibonacci number
-        return 0;
+        if (n <= 1) return n;
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
     // Task 6
