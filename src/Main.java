@@ -97,8 +97,8 @@ public class Main {
 
     // Task 2
     public static int sumElements(int[] arr, int n) {
-        // TODO: Implement recursive logic to find sum
-        return 0;
+        if (n == 1) return arr[n - 1];
+        return arr[n - 1] + sumElements(arr, n - 1);
     }
 
     // Task 3
