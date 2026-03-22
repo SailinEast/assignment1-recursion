@@ -138,7 +138,10 @@ public class Main {
 
     // Task 7
     public static void reverseOutput(int n, Scanner scanner) {
-        // TODO: Implement recursive logic to read and print in reverse order
+        if (n == 0) return;
+        int num = scanner.nextInt();
+        reverseOutput(n - 1, scanner);
+        System.out.print(num + " ");
     }
 
     // Task 8
