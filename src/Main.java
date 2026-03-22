@@ -8,76 +8,86 @@ public class Main {
         int task = scanner.nextInt();
 
         switch (task) {
-            case 1:
+            case 1: {
                 System.out.println("--- Task 1: Print Digits ---");
                 System.out.print("Enter a number: ");
-                int task1Num = scanner.nextInt();
-                printDigits(task1Num);
+                int input = scanner.nextInt();
+                printDigits(input);
                 break;
-            case 2:
+            }
+            case 2: {
                 System.out.println("--- Task 2: Average of Elements ---");
                 System.out.print("Enter the number of elements: ");
-                int n2 = scanner.nextInt();
-                int[] arr = new int[n2];
+                int len = scanner.nextInt();
+                int[] arr = new int[len];
                 System.out.print("Enter the elements: ");
-                for (int i = 0; i < n2; i++) {
+                for (int i = 0; i < len; i++) {
                     arr[i] = scanner.nextInt();
                 }
-                int sum = sumElements(arr, n2);
-                System.out.println("Average: " + ((double) sum / n2));
+                int sum = sumElements(arr, len);
+                System.out.println("Average: " + ((double) sum / len));
                 break;
-            case 3:
+            }
+            case 3: {
                 System.out.println("--- Task 3: Prime Number Check ---");
                 System.out.print("Enter a number: ");
-                int task3Num = scanner.nextInt();
-                checkPrime(task3Num, 2);
+                int n = scanner.nextInt();
+                checkPrime(n, 2);
                 break;
-            case 4:
+            }
+            case 4: {
                 System.out.println("--- Task 4: Factorial ---");
                 System.out.print("Enter a number: ");
-                int task4Num = scanner.nextInt();
-                System.out.println(factorial(task4Num));
+                int n = scanner.nextInt();
+                System.out.println(factorial(n));
                 break;
-            case 5:
+            }
+            case 5: {
                 System.out.println("--- Task 5: Fibonacci Number ---");
                 System.out.print("Enter a number: ");
-                int task5Num = scanner.nextInt();
-                System.out.println(fibonacci(task5Num));
+                int n = scanner.nextInt();
+                System.out.println(fibonacci(n));
                 break;
-            case 6:
+            }
+            case 6: {
                 System.out.println("--- Task 6: Power Function ---");
                 System.out.print("Enter base (a) and power (n): ");
                 int a = scanner.nextInt();
-                int n6 = scanner.nextInt();
-                System.out.println(power(a, n6));
+                int n = scanner.nextInt();
+                System.out.println(power(a, n));
                 break;
-            case 7:
+            }
+            case 7: {
                 System.out.println("--- Task 7: Reverse Output ---");
                 System.out.print("Enter the number of elements: ");
-                int n7 = scanner.nextInt();
+                int len = scanner.nextInt();
                 System.out.print("Enter the elements: ");
-                reverseOutput(n7, scanner);
+                reverseOutput(len, scanner);
                 System.out.println();
                 break;
-            case 8:
+            }
+            case 8: {
                 System.out.println("--- Task 8: Check Digits in String ---");
                 System.out.print("Enter a string: ");
-                String task8Str = scanner.next();
-                System.out.println(checkDigits(task8Str, 0));
+                String s = scanner.next();
+                System.out.println(checkDigits(s, 0));
                 break;
-            case 9:
+            }
+            case 9: {
                 System.out.println("--- Task 9: Count Characters in a String ---");
                 System.out.print("Enter a string: ");
-                String task9Str = scanner.next();
-                System.out.println(countCharacters(task9Str, 0));
+                String s = scanner.next();
+                System.out.println(countCharacters(s, 0));
                 break;
-            case 10:
+            }
+            case 10: {
                 System.out.println("--- Task 10: Greatest Common Divisor (GCD) ---");
                 System.out.print("Enter two numbers: ");
                 int gcdA = scanner.nextInt();
                 int gcdB = scanner.nextInt();
                 System.out.println(findGCD(gcdA, gcdB));
                 break;
+            }
             default:
                 System.out.println("Invalid task number.");
         }
