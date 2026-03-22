@@ -69,7 +69,7 @@ public class Main {
                 System.out.println("--- Task 9: Count Characters in a String ---");
                 System.out.print("Enter a string: ");
                 String task9Str = scanner.next();
-                System.out.println(countCharacters(task9Str));
+                System.out.println(countCharacters(task9Str, 0));
                 break;
             case 10:
                 System.out.println("--- Task 10: Greatest Common Divisor (GCD) ---");
@@ -159,7 +159,7 @@ public class Main {
 
     // Task 10
     public static int findGCD(int a, int b) {
-        // TODO: Implement recursive logic using Euclidean Algorithm
-        return 0;
+        if (b == 0) return a;
+        return findGCD(b, a % b);
     }
 }
