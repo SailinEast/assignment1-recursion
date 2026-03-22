@@ -63,7 +63,7 @@ public class Main {
                 System.out.println("--- Task 8: Check Digits in String ---");
                 System.out.print("Enter a string: ");
                 String task8Str = scanner.next();
-                System.out.println(checkDigits(task8Str));
+                System.out.println(checkDigits(task8Str, 0));
                 break;
             case 9:
                 System.out.println("--- Task 9: Count Characters in a String ---");
@@ -145,8 +145,9 @@ public class Main {
     }
 
     // Task 8
-    public static String checkDigits(String s) {
-        // TODO: Implement recursive logic to check if string contains only digits
+    public static String checkDigits(String s, int i) {
+        if (s.length() == i) return "Yes";
+        if (Character.isDigit(s.charAt(i))) return checkDigits(s, i + 1);
         return "No";
     }
 
