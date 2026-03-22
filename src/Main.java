@@ -87,7 +87,12 @@ public class Main {
 
     // Task 1
     public static void printDigits(int n) {
-        // TODO: Implement recursive logic to print digits
+        if (n % 10 == n) {
+            System.out.println(n);
+            return;
+        }
+        printDigits(n / 10);
+        System.out.println(n % 10);
     }
 
     // Task 2
