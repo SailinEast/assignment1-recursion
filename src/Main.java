@@ -30,7 +30,7 @@ public class Main {
                 System.out.println("--- Task 3: Prime Number Check ---");
                 System.out.print("Enter a number: ");
                 int task3Num = scanner.nextInt();
-                checkPrime(task3Num);
+                checkPrime(task3Num, 2);
                 break;
             case 4:
                 System.out.println("--- Task 4: Factorial ---");
@@ -102,8 +102,20 @@ public class Main {
     }
 
     // Task 3
-    public static void checkPrime(int n) {
-        // TODO: Implement recursive logic to check if prime
+    public static void checkPrime(int n, int div) {
+        if (n <= 1) {
+            System.out.println("Composite");
+            return;
+        }
+        if (div * div > n) {
+            System.out.println("Prime");
+            return;
+        }
+        if (n % div == 0) {
+            System.out.println("Composite");
+            return;
+        }
+        checkPrime(n, div + 1);
     }
 
     // Task 4
